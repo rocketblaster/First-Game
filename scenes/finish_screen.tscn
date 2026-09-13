@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bio8lnaxcgx6d"]
+
+[ext_resource type="Script" uid="uid://bb4wp8xcucvvw" path="res://scenes/finish_screen.gd" id="1_ll0in"]
+
+[node name="FinishScreen" type="Control" unique_id=2104087072]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ll0in")
+
+[node name="Label" type="Label" parent="." unique_id=282157749]
+layout_mode = 0
+offset_left = 492.0
+offset_top = 234.0
+offset_right = 619.0
+offset_bottom = 257.0
+text = "Yay you finished"
+
+[node name="Button" type="Button" parent="." unique_id=150570895]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 304.0
+offset_right = 585.0
+offset_bottom = 335.0
+text = "Replay"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
