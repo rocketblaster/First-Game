@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cx1camrkukq1w"
-path="res://.godot/imported/miku transparent.png-6fce278d37759068db739be477795344.ctex"
+uid="uid://dmnb4h3rc1hst"
+path="res://.godot/imported/Yellow.png-0549e50f049d83683bf90105a1a7552b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://miku transparent.png"
-dest_files=["res://.godot/imported/miku transparent.png-6fce278d37759068db739be477795344.ctex"]
+source_file="res://sprites/Yellow.png"
+dest_files=["res://.godot/imported/Yellow.png-0549e50f049d83683bf90105a1a7552b.ctex"]
 
 [params]
 

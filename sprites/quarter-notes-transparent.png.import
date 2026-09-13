@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhbs54htssml7"
-path="res://.godot/imported/Window.png-b24dbb1f932039a821fe52326b0d61b2.ctex"
+uid="uid://cjqn4vi3iqhoi"
+path="res://.godot/imported/quarter-notes-transparent.png-55b387ecb14b1f5a06f21cc35be7d2bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Window.png"
-dest_files=["res://.godot/imported/Window.png-b24dbb1f932039a821fe52326b0d61b2.ctex"]
+source_file="res://sprites/quarter-notes-transparent.png"
+dest_files=["res://.godot/imported/quarter-notes-transparent.png-55b387ecb14b1f5a06f21cc35be7d2bb.ctex"]
 
 [params]
 

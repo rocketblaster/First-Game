@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjqn4vi3iqhoi"
-path="res://.godot/imported/quarter-notes-transparent.png-333ba9d380e79ca18302a1d2e6d2ae0f.ctex"
+uid="uid://cx1camrkukq1w"
+path="res://.godot/imported/miku transparent.png-dcf669e776819e4cd64a9e2ad3d50a85.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://quarter-notes-transparent.png"
-dest_files=["res://.godot/imported/quarter-notes-transparent.png-333ba9d380e79ca18302a1d2e6d2ae0f.ctex"]
+source_file="res://sprites/miku transparent.png"
+dest_files=["res://.godot/imported/miku transparent.png-dcf669e776819e4cd64a9e2ad3d50a85.ctex"]
 
 [params]
 

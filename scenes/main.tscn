@@ -1,18 +1,18 @@
 [gd_scene format=4 uid="uid://bsqjjyrhmgfus"]
 
-[ext_resource type="Texture2D" uid="uid://bsy6gqookcwxe" path="res://Blank.png" id="1_7mycd"]
-[ext_resource type="Script" uid="uid://glmgbq7gdiik" path="res://player.gd" id="1_h2yge"]
-[ext_resource type="Texture2D" uid="uid://cx1camrkukq1w" path="res://miku transparent.png" id="2_1bvp3"]
-[ext_resource type="Texture2D" uid="uid://dhbs54htssml7" path="res://Window.png" id="2_lquwl"]
-[ext_resource type="Texture2D" uid="uid://d2dlkmqex82to" path="res://Ground tile.png" id="3_h2yge"]
-[ext_resource type="Texture2D" uid="uid://cjqn4vi3iqhoi" path="res://quarter-notes-transparent.png" id="4_1bvp3"]
-[ext_resource type="Script" uid="uid://c01kisf88psil" path="res://note.gd" id="4_272bh"]
-[ext_resource type="Script" uid="uid://d4anhmjkuj27d" path="res://killzone.gd" id="8_5vw27"]
-[ext_resource type="Script" uid="uid://clfcwpu87bwa7" path="res://finish.gd" id="9_4c57u"]
-[ext_resource type="Texture2D" uid="uid://dmnb4h3rc1hst" path="res://Yellow.png" id="10_efxa6"]
+[ext_resource type="Texture2D" uid="uid://bsy6gqookcwxe" path="res://sprites/Blank.png" id="1_choun"]
+[ext_resource type="Texture2D" uid="uid://dhbs54htssml7" path="res://sprites/Window.png" id="2_ya4ey"]
+[ext_resource type="Texture2D" uid="uid://d2dlkmqex82to" path="res://sprites/Ground tile.png" id="3_eb6dy"]
+[ext_resource type="Script" uid="uid://glmgbq7gdiik" path="res://scripts/player.gd" id="4_trceg"]
+[ext_resource type="Texture2D" uid="uid://cx1camrkukq1w" path="res://sprites/miku transparent.png" id="5_a8y0u"]
+[ext_resource type="Script" uid="uid://c01kisf88psil" path="res://scripts/note.gd" id="6_jkv2x"]
+[ext_resource type="Texture2D" uid="uid://cjqn4vi3iqhoi" path="res://sprites/quarter-notes-transparent.png" id="7_jbj1t"]
+[ext_resource type="Script" uid="uid://d4anhmjkuj27d" path="res://scripts/killzone.gd" id="8_muem4"]
+[ext_resource type="Script" uid="uid://clfcwpu87bwa7" path="res://scripts/finish.gd" id="9_dp3eg"]
+[ext_resource type="Texture2D" uid="uid://dmnb4h3rc1hst" path="res://sprites/Yellow.png" id="10_0ld40"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
-texture = ExtResource("1_7mycd")
+texture = ExtResource("1_choun")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -34,7 +34,7 @@ texture = ExtResource("1_7mycd")
 sources/0 = SubResource("TileSetAtlasSource_272bh")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mycd"]
-texture = ExtResource("2_lquwl")
+texture = ExtResource("2_ya4ey")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -56,7 +56,7 @@ texture = ExtResource("2_lquwl")
 sources/0 = SubResource("TileSetAtlasSource_7mycd")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
-texture = ExtResource("3_h2yge")
+texture = ExtResource("3_eb6dy")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -120,12 +120,12 @@ tile_map_data = PackedByteArray("AAAAACEAAAAAAAAAAAAAACIAAAAAAAEAAAAAACMAAAAAAAI
 tile_set = SubResource("TileSet_p5w1b")
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=2070811888]
-script = ExtResource("1_h2yge")
+script = ExtResource("4_trceg")
 
 [node name="MikuTransparent" type="Sprite2D" parent="Player" unique_id=692690088]
 texture_filter = 1
 position = Vector2(55, 454)
-texture = ExtResource("2_1bvp3")
+texture = ExtResource("5_a8y0u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=252996455]
 position = Vector2(55, 454)
@@ -139,12 +139,12 @@ position_smoothing_speed = 6.0
 
 [node name="note" type="Area2D" parent="." unique_id=849019315]
 position = Vector2(0, 27)
-script = ExtResource("4_272bh")
+script = ExtResource("6_jkv2x")
 
 [node name="QuarterNotesTransparent" type="Sprite2D" parent="note" unique_id=1484899897]
 texture_filter = 1
 position = Vector2(281, 469)
-texture = ExtResource("4_1bvp3")
+texture = ExtResource("7_jbj1t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="note" unique_id=1667246034]
 position = Vector2(282, 469)
@@ -152,12 +152,12 @@ shape = SubResource("CircleShape2D_p5w1b")
 
 [node name="note2" type="Area2D" parent="." unique_id=2051464083]
 position = Vector2(172, -138)
-script = ExtResource("4_272bh")
+script = ExtResource("6_jkv2x")
 
 [node name="QuarterNotesTransparent" type="Sprite2D" parent="note2" unique_id=153772908]
 texture_filter = 1
 position = Vector2(281, 469)
-texture = ExtResource("4_1bvp3")
+texture = ExtResource("7_jbj1t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="note2" unique_id=1364131669]
 position = Vector2(282, 469)
@@ -165,12 +165,12 @@ shape = SubResource("CircleShape2D_p5w1b")
 
 [node name="note3" type="Area2D" parent="." unique_id=30318174]
 position = Vector2(417, -254)
-script = ExtResource("4_272bh")
+script = ExtResource("6_jkv2x")
 
 [node name="QuarterNotesTransparent" type="Sprite2D" parent="note3" unique_id=1968122988]
 texture_filter = 1
 position = Vector2(281, 469)
-texture = ExtResource("4_1bvp3")
+texture = ExtResource("7_jbj1t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="note3" unique_id=1434691362]
 position = Vector2(282, 469)
@@ -178,19 +178,19 @@ shape = SubResource("CircleShape2D_p5w1b")
 
 [node name="note4" type="Area2D" parent="." unique_id=808363881]
 position = Vector2(570, -137)
-script = ExtResource("4_272bh")
+script = ExtResource("6_jkv2x")
 
 [node name="QuarterNotesTransparent" type="Sprite2D" parent="note4" unique_id=1973140306]
 texture_filter = 1
 position = Vector2(281, 469)
-texture = ExtResource("4_1bvp3")
+texture = ExtResource("7_jbj1t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="note4" unique_id=16829527]
 position = Vector2(282, 469)
 shape = SubResource("CircleShape2D_p5w1b")
 
 [node name="killzone" type="Area2D" parent="." unique_id=2114705315]
-script = ExtResource("8_5vw27")
+script = ExtResource("8_muem4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=1550198974]
 position = Vector2(545, 660)
@@ -198,13 +198,13 @@ shape = SubResource("WorldBoundaryShape2D_p5w1b")
 
 [node name="Finish" type="Area2D" parent="." unique_id=878581992]
 position = Vector2(1120, 496)
-script = ExtResource("9_4c57u")
+script = ExtResource("9_dp3eg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Finish" unique_id=466680756]
 shape = SubResource("RectangleShape2D_cfmmv")
 
 [node name="Sprite2D" type="Sprite2D" parent="Finish" unique_id=1908009355]
-texture = ExtResource("10_efxa6")
+texture = ExtResource("10_0ld40")
 
 [connection signal="body_entered" from="note" to="note" method="_on_body_entered"]
 [connection signal="body_entered" from="note2" to="note2" method="_on_body_entered"]
